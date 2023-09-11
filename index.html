@@ -1,0 +1,969 @@
+<?
+include 'db.php';
+include 'functions.php';
+
+
+?>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="copyright" content="" />
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-rtl.min.css"> -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/fancybox.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+<header>
+        <nav class="navbar navbar-expand-lg fixed-top bgg-dark  bg-info">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" alt=""></a>
+                <div class="navbar-toggler menu-btn" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="menu-btn-burger"></i>
+                </div>
+                <div class="collapse navbar-collapse pb-3" id="navbarNav">
+                    <ul class="navbar-nav  ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#" data-scroll-nav="0">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="1">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="2">Expertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="4">work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="5">Marketing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-scroll-nav="6">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+    <section class="home d-flex align-items-center mt-5" data-scroll-index="0">
+        <div class="container">
+            <div class="effect-wrap">
+                <i class="fas fa-plus effect effect-1"></i>
+                <i class="fas fa-plus effect effect-2"></i>
+                <i class="fas fa-circle-notch effect effect-3"></i>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-5">
+                    <!-- <div class="text" style="color: #fff;"></div> -->
+                    <div class="owl-carousel home-carousel">
+                        <div class="item-home-carousel pt-5">
+                            <div class="home-text">
+                                <h1>Get <span>Managed!</span></h1>
+                                <p>Organize & Manage at no effort</p>
+                            </div>
+                        </div>
+                        <div class="item-home-carousel pt-5">
+                            <div class="home-text">
+                                <h1>Get <span>Advanced!</span></h1>
+                                <p>Web & Mobile Apps Solutions</p>
+                            </div>
+                        </div>
+                        <div class="item-home-carousel pt-5">
+                            <div class="home-text">
+                                <h1>Get <span>Noticed!</span></h1>
+                                <p>Advertising & Marketing done Right</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-btn">
+                        <!-- <a href="" class="btn btn-1 mt-4" data-scroll-goto="3">download app</a> -->
+                        <a class="btn btn-1 mt-4 vidoeo-play-btn" data-fancybox="Slider" data-src="https://www.youtube.com/watch?v=fqLhRMaMGn8" href="javascript:;">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="me">
+                            <span>Osama</span>
+                            <span>Husam</span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-5 text-center justify-content-center">
+                    <div class="home-img">
+                        <div class="circle"></div>
+                        <img src="assets/images/logo2.png" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about d-flex align-items-center py-5" id="about" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="item-sec-titel text-center">
+                        <div class="line1"></div>
+                        <h2>about <span>u</span>s</h2>
+                        <p>GET ADVANCED! GET NOTICED! GET MANAGED!</p>
+                        <div class="line2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 align-items-center">
+                <div class="col-md-6 px-5">
+                    <div class="item-about-text">
+                        <div class="item-about-text">
+                            <p id="typedtext"><i class="fas fa-quote-left"></i> We are a custom Web & Mobile
+                                development company based in Abu Dhabi, United Arab
+                                Emirates. Our work features innovative designs that creatively utilize cutting-edge
+                                features, solid information architecture, and intuitive websites and web solutions
+                                development. <i class="fas fa-quote-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="video__content">
+                        <video id="video-file" poster="assets/images/لقطة الشاشة 2021-09-05 070559.png">
+                            <source src="assets/video/video.mp4" type="video/mp4">
+                        </video>
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="fas fa-play video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- <section class="ex my-5 py-5" data-scroll-index="2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 mb-5">
+                        <div class="item-sec-titel text-center">
+                            <div class="line1"></div>
+                            <h2>AREAS <span>OF</span> EXPERTISE</h2>
+                            <div class="line2"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mb-5 col-6">
+                        <a href="#">
+                            <div class="box-2">
+                                <span>
+                                    <div class="box"></div>
+                                </span>
+                                <div class="item-box-2 text-center">
+                                    <img src="images/t-1.png" alt="">
+                                    <h3>Websites and Systems</h3>
+                                    <i>Ready or Custom Made!</i>
+                                    <p>The most used platform for Online shopping and systems, now at your finger tips!
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mb-5 col-6">
+                        <a href="#">
+                            <div class="box-2">
+                                <span>
+                                    <div class="box"></div>
+                                </span>
+                                <div class="item-box-2 text-center">
+                                    <img src="images/t-1.png" alt="">
+                                    <h3>Websites and Systems</h3>
+                                    <i>Ready or Custom Made!</i>
+                                    <p>The most used platform for Online shopping and systems, now at your finger tips!
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mb-5 col-6">
+                        <a href="#">
+                            <div class="box-2">
+                                <span>
+                                    <div class="box"></div>
+                                </span>
+                                <div class="item-box-2 text-center">
+                                    <img src="images/t-1.png" alt="">
+                                    <h3>Websites and Systems</h3>
+                                    <i>Ready or Custom Made!</i>
+                                    <p>The most used platform for Online shopping and systems, now at your finger tips!
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 754 -->
+    <!-- </div>
+                    <div class="col-lg-3 col-md-4 mb-5 col-6">
+                        <a href="#">
+                            <div class="box-2">
+                                <span>
+                                    <div class="box"></div>
+                                </span>
+                                <div class="item-box-2 text-center">
+                                    <img src="images/t-1.png" alt="">
+                                    <h3>Websites and Systems</h3>
+                                    <i>Ready or Custom Made!</i>
+                                    <p>The most used platform for Online shopping and systems, now at your finger tips!
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    <section class="exp my-5 py-5" data-scroll-index="2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 mb-5">
+                    <div class="item-sec-titel text-center">
+                        <div class="line1"></div>
+                        <h2>AREAS <span>OF</span> EXPERTISE</h2>
+                        <div class="line2"></div>
+                    </div>
+                </div>
+                <div class="col-md-12  justify-content-center">
+                    <div class="owl-carousel exp-owl text-center">
+                        <!-- <div class="boxx">
+                                <div class="icon-boxx">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" height="80" width="80">
+  
+                                        <g transform="matrix(5.714285714285714,0,0,5.714285714285714,0,0)"><g>
+                                            <rect x="0.5" y="0.5" width="13" height="13" rx="1" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round"></rect>
+                                            <line x1="0.5" y1="4" x2="13.5" y2="4" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round"></line>
+                                            <g>
+                                              <polyline points="4.5 7 3 8.5 4.5 10" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round"></polyline>
+                                              <polyline points="10 7 11.5 8.5 10 10" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round"></polyline>
+                                              <line x1="6.5" y1="10.5" x2="8" y2="6" style="fill: none;stroke: #000000;stroke-linecap: round;stroke-linejoin: round"></line>
+                                            </g>
+                                          </g></g></svg>
+                                </div>
+                                <div class="item-boxx">
+                                    <h1>Websites and Systems</h1>
+                                    <i>Ready or Custom Made!</i>
+                                    <p>The most used platform for Online shopping and systems, now at your finger tips!
+                                    </p>
+                                </div>
+                            </div> -->
+
+                        <a href="service1.html">
+                        <div class="boxx">
+                            <div class="icon-boxx">
+                            <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="item-boxx">
+                                <h1>Websites and Systems</h1>
+                                <i>Ready or Custom Made!</i>
+                                <p>The most used platform for Online shopping and systems, now at your finger tips!
+                                </p>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="service2.html">
+                        <div class="boxx">
+                            <div class="icon-boxx">
+                            <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="item-boxx">
+                                <h1>Mobile and Apps</h1>
+                                <div class="item-cont-boxx">
+                                <i>Easy, Effecient and Durable</i>
+                                <p>The most promising platform for online users, now you can go Native, Creative and Original.
+                                </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        </a>
+                        <a href="service4.html">
+                        <div class="boxx">
+                            <div class="icon-boxx">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="item-boxx">
+                                <h1>Management</h1>
+                                <div class="item-cont-boxx">
+                                    <i>Get Managed! at no efforts!</i>
+                                    <p>Get Rest, with Ferma, we take care of all the headache of managing your website, app, and users.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="service3.html">
+                        <div class="boxx">
+                            <div class="icon-boxx">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <div class="item-boxx">
+                                <h1>Marketing</h1>
+                                <div class="item-cont-boxx">
+                                    <i style="font-size: 15px;">Get Noticed! Right where you should!</i>
+                                    <p>Get Noticed! with our latest strategies and proven methods on all advertising platforms..
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-7 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 m-auto text-center">
+                    <div class="owl-carousel sec-7-carousel">
+                        <div class="item-sec-7 text-center">
+                        
+                            <div class="item-icon-tw text-center d-flex align-items-center justify-content-center">
+                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_wthj6qmf.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+                            </div>
+                            <p><a href="">@envato:</a> All good things come to an end - Creattica is closing down on
+                                May 31st, read about it on the Creattica blog <a href="">http://blog.creattica.com/post/85480168113/</a></p>
+                        </div>
+                        <div class="item-sec-7 text-center">
+                            <div class="item-icon-tw text-center d-flex align-items-center justify-content-center">
+                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_wthj6qmf.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+                            </div>
+                            <p><a href="">@envato:</a> All good things come to an end - Creattica is closing down on
+                                May 31st, read about it on the Creattica blog <a href="">http://blog.creattica.com/post/85480168113/</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work my-5 py-5" id="work" data-scroll-index="4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <div class="item-sec-titel text-center">
+                        <div class="line1"></div>
+                        <h2>OUR <span>W</span>ORK</h2>
+                        <p>OUR WORK, OUR PROVE, OUR PROUD!</p>
+                        <div class="line2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12 p-0">
+                    <div class="folio">
+                        <div class="port one">
+                            <img src="assets/images//img1.jpg" alt="">
+                            <div class="Hover">
+                                <a href="" data-fancybox="Slider" data-src="assets/images/img1.jpg" class="prePhoto" data-rel="prettyPhoto">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="" class="details">
+                                    <i class="fa fa-comment"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="port tow">
+                            <img src="assets/images//img2.jpg" alt="">
+                            <div class="Hover">
+                                <a href="" data-fancybox="Slider" data-src="assets/images/img2.jpg" class="prePhoto" data-rel="prettyPhoto">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="" class="details">
+                                    <i class="fa fa-comment"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="port three">
+                            <img src="assets/images//img3.jpg" alt="">
+                            <div class="Hover">
+                                <a href="" data-fancybox="Slider" data-src="assets/images/img3.jpg" class="prePhoto" data-rel="prettyPhoto">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="" class="details">
+                                    <i class="fa fa-comment"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="port four">
+                            <img src="assets/images//img4.jpg" alt="">
+                            <div class="Hover">
+                                <a href="" data-fancybox="Slider" data-src="assets/images/img4.jpg" class="prePhoto" data-rel="prettyPhoto">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="" class="details">
+                                    <i class="fa fa-comment"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="clearfix"></div>
+
+                        <div class="port five">
+                            <img src="assets/images//img5.jpg" alt="">
+                            <div class="Hover">
+                                <a href="" data-fancybox="Slider" data-src="assets/images/img5.jpg" class="prePhoto" data-rel="prettyPhoto">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="" class="details">
+                                    <i class="fa fa-comment"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="port six">
+                            <img src="assets/images//img7.jpg" alt="">
+                            <div class="Hover">
+                                <a href="" data-fancybox="Slider" data-src="assets/images/img6.jpg" class="prePhoto" data-rel="prettyPhoto">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="" class="details">
+                                    <i class="fa fa-comment"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="port seven">
+                            <img src="assets/images//img8.jpg" alt="">
+                            <div class="Hover">
+                                <a href="" data-fancybox="Slider" data-src="assets/images/img8.jpg" class="prePhoto" data-rel="prettyPhoto">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="" class="details">
+                                    <i class="fa fa-comment"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="port eight">
+                            <img src="assets/images//img9.jpg" alt="">
+                            <div class="Hover">
+                                <a href="" data-fancybox="Slider" data-src="assets/images/img9.jpg" class="prePhoto" data-rel="prettyPhoto">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="" class="details">
+                                    <i class="fa fa-comment"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="port nine">
+                            <img src="assets/images//img6.jpg" alt="">
+                            <div class="Hover">
+                                <a href="" data-fancybox="Slider" data-src="assets/images/img6.jpg" class="prePhoto" data-rel="prettyPhoto">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="" class="details">
+                                    <i class="fa fa-comment"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+
+                    </div>
+                    <div class="Btn pb-4">
+                        <div class="viewBtn">
+                            <a href="">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="more-work my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6 p-0">
+                                                <div class="item-img-1-more-work port-2">
+                                                    <a href="" data-fancybox="Slider" data-src="images/portfolio/product1.jpg" ><img src="images/portfolio/product1.jpg" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 p-0">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="item-img-2-more-work port-2">
+                                                            <a href="" data-fancybox="Slider" data-src="images/portfolio/product4.jpg" ><img src="images/portfolio/product4.jpg" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="item-img-2-more-work port-2">
+                                                            <a href="" data-fancybox="Slider" data-src="images/portfolio/product3.jpg" ><img src="images/portfolio/product3.jpg" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 p-0">
+                                        
+                                        <div class="item-img-5-more-work port-2">
+                                            <a href="" data-fancybox="Slider" data-src="images/portfolio/p2.jpg" ><img src="images/portfolio/p2.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="row">
+                                    <div class="col-md-12 ">
+                                        <div class="item-img-1-more-work port-2">
+                                            <a href="" data-fancybox="Slider" data-src="images/portfolio/p3.jpg" ><img src="images/portfolio/p3.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6 pr-0">
+                                                <div class="item-img-10-more-work port-2">
+                                                    <div class="item-img-9-more-work">
+                                                        <a href="" data-fancybox="Slider" data-src="images/portfolio/p7.jpg" ><img src="images/portfolio/p7.jpg" alt=""></a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-6 pl-0">
+                                                <div class="item-img-10-more-work port-2">
+                                                    <div class="item-img-9-more-work">
+                                                        <a href="" data-fancybox="Slider" data-src="images/portfolio/p8.jpg" ><img src="images/portfolio/p8.jpg" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-0">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6 pr-0">
+                                        
+                                            <div class="item-img-9-more-work port-2">
+                                                <a href="" data-fancybox="Slider" data-src="images/portfolio/p4.jpg" ><img src="images/portfolio/p4.jpg" alt=""></a>
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6 pl-0">
+                                        
+                                            <div class="item-img-9-more-work port-2">
+                                                <a href="" data-fancybox="Slider" data-src="images/portfolio/p3.jpg" ><img src="images/portfolio/p3.jpg" alt=""></a>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="item-img-1-more-work port-2">
+                                    <a href="" data-fancybox="Slider" data-src="images/portfolio/p2.jpg" ><img src="images/portfolio/p2.jpg" alt=""></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    <section class="sec-6 my-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel sec-6-carousel">
+                        <div class="item-icon-lang-prog text-center d-flex justify-content-center align-items-center">
+                            <img src="assets/images/payton.png" alt="">
+                        </div>
+                        <div class="item-icon-lang-prog text-center d-flex justify-content-center align-items-center">
+                            <img src="assets/images/html.png" alt="">
+                        </div>
+                        <div class="item-icon-lang-prog text-center pc-1 d-flex justify-content-center align-items-center">
+                            <img src="assets/images/css.png" alt="">
+                        </div>
+                        <div class="item-icon-lang-prog text-center d-flex justify-content-center align-items-center">
+                            <img src="assets/images/js.png" alt="">
+                        </div>
+                        <div class="item-icon-lang-prog text-center d-flex justify-content-center align-items-center">
+                            <img src="assets/images/php.png" alt="" style="width: 130px !important;">
+                        </div>
+                        <div class="item-icon-lang-prog text-center d-flex justify-content-center align-items-center">
+                            <img src="assets/images/Adobe_After_Effects_CC_icon.svg.png" alt="">
+                        </div>
+                        <div class="item-icon-lang-prog text-center d-flex justify-content-center align-items-center">
+                            <img src="assets/images/616px-Adobe_Photoshop_CC_icon.svg.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-5  py-5" data-scroll-index="5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="item-sec-titel text-center">
+                        <div class="line1"></div>
+                        <h2>MARKETING <span>&</span> ADVERTISING</h2>
+                        <p>AT YOUR FINGER TIPS, OUR CREATIVE TEAM</p>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="owl-carousel sec-5-carousel">
+                        <div class="item-sec-5 text-center py-5">
+                            <i class="fas fa-video"></i>
+                            <h3>Video Editing & Creation</h3>
+                        </div>
+
+                        <div class="item-sec-5 text-center py-5">
+                            <i class="fas fa-microphone-alt"></i>
+                            <h3>Voice Over Services</h3>
+                        </div>
+                        <div class="item-sec-5 text-center py-5">
+                            <i class="fas fa-camera-retro"></i>
+                            <h3>Photography & Editing</h3>
+                        </div>
+                        <div class="item-sec-5 text-center py-5">
+                            <i class="fas fa-ad"></i>
+                            <h3>Google <span> </span> Advertising</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-4 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="item-sec-titel text-center">
+                        <div class="line1"></div>
+                        <h2>company <span>s</span>tats</h2>
+                        <p>GET ADVANCED! GET NOTICED! GET MANAGED!</p>
+                        <div class="line2"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center col-6">
+                    <div class="box-sec-4">
+                        <div class="item-box-conter">
+                            <p class="counter" data-target="789">0</p>
+                        </div>
+                    </div>
+                    <div class="item-box-text">
+                        <h3>CLIENTS</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center col-6">
+                    <div class="box-sec-4">
+                        <div class="item-box-conter">
+                            <p class="counter" data-target="584">0</p>
+                        </div>
+                    </div>
+                    <div class="item-box-text">
+                        <h3>AWARDS</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center col-6">
+                    <div class="box-sec-4">
+                        <div class="item-box-conter">
+                            <p class="counter" data-target="5512">0</p>
+                        </div>
+                    </div>
+                    <div class="item-box-text">
+                        <h3>PROJECTS</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center col-6">
+                    <div class="box-sec-4">
+                        <div class="item-box-conter">
+                            <p class="counter" data-target="7000">0</p>
+                        </div>
+                    </div>
+                    <div class="item-box-text">
+                        <h3>MAILS</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="sec-3 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 m-auto text-center">
+                    <div class="item-sec-3">
+                        <p>WE ARE AVAILABLE EVERYWHERE, ANYTIME!</p>
+                        <h3>GET IN TOUCH WITH US NOW!</h3>
+                        <!-- <div class="line2"></div> -->
+
+                        <a href="#" class="btn-3 mt-4">
+                            <span>GET IN TOUCH</span>
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact my-5" data-scroll-index="6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-4">
+                    <div class="item-sec-titel text-center">
+                        <div class="line1"></div>
+                        <h2>CON<span>T</span>ACT</h2>
+                        <p>GET IN TOUCH WITH US</p>
+                        <div class="line2"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 pr-3">
+                    <div class="item-cont-one">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="item-box-cont">
+                                    <div class="row">
+                                        <div class="col-md-2 text-center p-0 col-2  d-flex align-items-center justify-content-center">
+                                            <div class="icon-cont">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 p-0 col-10">
+                                            <p class="m-0">Company Location</p>
+                                            <span>Gaza XXX XXX</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="item-box-cont">
+                                    <div class="row">
+                                        <div class="col-md-2 col-2  text-center p-0  d-flex align-items-center justify-content-center">
+                                            <div class="icon-cont">
+                                                <i class="fas fa-phone"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 p-0 col-10">
+                                            <p class="m-0">Offices</p>
+                                            <span>+972567008908</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="item-box-cont">
+                                    <div class="row">
+                                        <div class="col-md-2 col-2 text-center p-0 d-flex align-items-center justify-content-center">
+                                            <div class="icon-cont">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 p-0 col-10">
+                                            <p class="m-0">WhatsApp</p>
+                                            <span>+972567008908</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="item-box-cont">
+                                    <div class="row ">
+                                        <div class="col-md-2 col-2 text-center p-0  d-flex align-items-center justify-content-center">
+                                            <div class="icon-cont">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 p-0 col-10">
+                                            <p class="m-0">E-mail</p>
+                                            <span>info@ferma.ae</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mt-4 pr-3">
+                    <div class="item-cont-tow">
+                        <form action="" method="POST">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="item-form">
+                                        <input type="text" placeholder="Name" name="name">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="item-form">
+                                        <input type="text" placeholder="Email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="item-form">
+                                        <textarea name="" id="" cols="91" rows="5" placeholder="Message" name="message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="item-form text-center">
+                                                <button class="d-block btn" name="send">SEND</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <!-- <?php if (isset($_SESSION['message'])) { ?>
+                                                <div class=" alert alert-<?php echo $_SESSION['type'] ?> alert-dismissible fade show tex_h4 m-0  " role="alert">
+                                                    <?php echo '<h6>' . $_SESSION['message'] . '</h6>';
+
+                                                    unset($_SESSION['message']);
+                                                    unset($_SESSION['type']);
+                                                    ?>
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                            <?php } ?> -->
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="ser my-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="box bg-dark">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-0 m-0">
+                        <div class="box-2">
+                            <span>
+                                <div class="box"></div>
+                            </span>
+                            <div class="item-box-2 ">
+                                <h1>osama</h1>
+                                <h1>osama</h1>
+                                <h1>osama</h1>
+                                <h1>osama</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-0 m-0">
+                        <div class="box-2">
+                            <span>
+                                <div class="box"></div>
+                            </span>
+                            <div class="item-box-2 ">
+                                <h1>osama</h1>
+                                <h1>osama</h1>
+                                <h1>osama</h1>
+                                <h1>osama</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+
+    <section class="spinner preloader">
+        <div class="spinner-grow" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </section>
+    <div class="top">
+        <lord-icon src="https://cdn.lordicon.com/xwjtkymn.json" trigger="loop" colors="primary:#000,secondary:#cf9e0f" stroke="130" scale="55" style="width:50px;height:50px">
+        </lord-icon>
+    </div>
+    <div class="toggle-theme">
+        <i class="fas "></i>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <div class="itrm-footer">
+                    <img src="images/logo.svg" alt="">
+                    <h4>MADE WITH <i class="fas fa-heart"></i> AND <i class="fas fa-coffee"></i> IN UAE</h4>
+                    <div class="socail">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-github"></i></a>
+                        <a href=""><i class="fab fa-google"></i></a>
+                    </div>
+                    <p>ALL RIGHT RESERVED, FERMA ELECTRONICS SERVICES L.L.C.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/fancybox.umd.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="assets/js/scrollIt.min.js"></script>
+<script src="assets/js/anime.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
